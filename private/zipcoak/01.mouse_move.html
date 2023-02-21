@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01. 마우스를 활용한 인터랙티브</title>
+    <style>
+        body, html {
+            background-color: black;
+            position: relative;
+            cursor: none;
+        }
+
+        h1 {
+            color: #fff;
+        }
+        .cursor_item {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            let h1 = document.getElementsByTagName("h1")[0];
+            let cursor_item = document.getElementsByClassName("cursor_item")[0]
+            window.addEventListener("mousemove", mouseFunc, false);
+            
+            function mouseFunc (e) {
+                h1.innerHTML = `x: ${e.clientX} y : ${e.clientY}`;
+                //cursor_item.style.transform = "translate("+e.clientX+"px," + e.clientY +"px)";
+                cursor_item.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+                //console.log(e.clientX, e.clientY);
+            }
+        }
+        //clientX
+        //브라우저에서 사용자에게 웹페이지가 보여지는 영역을 기준으로 좌표를 표시합니다.
+        //따라서, 스크롤바가 움직이더라도, 특정 지점의 clientX, clientY의 값은 동일합니다.
+        //https://hianna.tistory.com/493
+    </script>
+</head>
+<body>
+    <h1>test</h1>
+    <div class="cursor_item"></div>
+</body>
+</html>
