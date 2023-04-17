@@ -1,0 +1,400 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+		<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+			<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+				<!DOCTYPE html>
+				<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" data-dark="true">
+
+				<head>
+					<meta charset="utf-8">
+					<meta name="viewport"
+						content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+					<title>soozi | 오르시아 - 명품웨딩주얼리</title>
+					<link rel="stylesheet" href="/css/front/soozi.min.css">
+					<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+					<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+					<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+					<script src="/js/script/jquery.js"></script>
+					<script src="/js/script/slick.min.js"></script>
+					<script src="/js/script/gsap.js"></script>
+					<script src="/js/script/ScrollTrigger.js"></script>
+					<script src="/js/script/scroll-smoother.js"></script>
+					<script src="/js/soozi.js"></script>
+                    
+                    <!-- 클론사이트 : https://www.orsia.co.kr/ -->
+				</head>
+
+				<body>
+					<div id="wrap">
+						<div class="container">
+							<main id="contain">
+								<header>
+                                    <div class="header_wrap wrap_1600 flex_btw">
+                                        <a href="/soozi.jsp" class="header_logo">
+                                            <img src="https://www.orsia.co.kr/img/logo/logo_W.png" alt="orsia logo">
+                                        </a>
+                                        <nav>
+                                            <ul class="gnb flex">
+                                                <li class="dep1">
+                                                    <a href="" class="dep1_txt">wedding</a>
+                                                </li>
+                                                <li class="dep1">
+                                                    <a href="" class="dep1_txt">fine jewelry</a>
+                                                </li>
+                                                <li class="dep1">
+                                                    <a href="" class="dep1_txt">jewelry</a>
+                                                </li>
+                                                <li class="dep1">
+                                                    <a href="" class="dep1_txt">house</a>
+                                                </li>
+                                                <li class="dep1">
+                                                    <a href="" class="dep1_txt">review</a>
+                                                </li>
+                                                <li class="dep1">
+                                                    <a href="" class="dep1_txt">reservation</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="ham_wrap">
+                                            <div class="ham_btn">
+                                                <span class="line n1"></span>
+                                                <span class="line n2"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+
+                                <div id="smooth-wrapper">
+                                    <div id="smooth-content">
+                                        <div class="body_wrap">
+                                            <section class="sec sec01 sec_video">
+                                                <div class="video_wrap">
+                                                    <iframe src="https://player.vimeo.com/video/798951393?h=2625235e11&amp;background=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" title="newyork_20.mp4"></iframe>
+                                                </div>
+                                                <div class="typo_wrap">
+                                                    <div class="typo n1">
+                                                        <div class="wrap_1600 wrap_cont flex">
+                                                            <div class="big_txt">
+                                                                <img src="https://www.orsia.co.kr/img/main/vis_O.png">
+                                                            </div>
+                                                            <div class="small_txt">
+                                                                The <span class="emph font_wb">true beauty</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="line"></div>
+                                                    </div>
+                                                    <div class="typo n2">
+                                                        <div class="wrap_1280 wrap_cont justify_fs flex">
+                                                            <div class="small_txt">
+                                                                is <span class="emph font_wb">evident</span> in
+                                                            </div>
+                                                            <div class="big_txt">
+                                                                <img src="https://www.orsia.co.kr/img/main/vis_R.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="line"></div>
+                                                    </div>
+                                                    <div class="typo n3">
+                                                        <div class="wrap_1280 wrap_cont flex">
+                                                            <div class="big_txt n1">
+                                                                <img src="https://www.orsia.co.kr/img/main/vis_S.png">
+                                                            </div>
+                                                            <div class="big_txt n2">
+                                                                <img src="https://www.orsia.co.kr/img/main/vis_I.png">
+                                                            </div>
+                                                            <div class="small_txt">
+                                                                <span class="emph font_wb">Jewelry</span>
+                                                            </div>
+                                                            <div class="since_txt">
+                                                                since 1974 ©<br>
+                                                                orsia fine jewelry<br>
+                                                                with 50 years of history
+                                                            </div>
+                                                        </div>
+                                                        <div class="line"></div>
+                                                    </div>
+                                                    <div class="typo n4">
+                                                        <div class="wrap_1280 wrap_cont flex">
+                                                            <div class="big_txt">
+                                                                <img src="https://www.orsia.co.kr/img/main/vis_A.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>  <!-- //sec01 -->
+                                            <section class="sec sec02 sec_new">
+                                                <div class="wrap_1600">
+                                                    <h3 class="sec_tit">New Arrivals</h3>
+                                                    <div class="slide_wrap">
+                                                        <ul class="slide_box">
+                                                            <li class="slide_cont n1 rel">
+                                                                <div class="img_wrap">
+                                                                </div>
+                                                                <div class="txt_wrap abs">
+                                                                    <p class="top_txt">[New Design] 구엘_남1</p>
+                                                                    <p class="tit_txt">Guell_M</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="slide_cont n2 rel">
+                                                                <div class="img_wrap">
+                                                                </div>
+                                                                <div class="txt_wrap abs">
+                                                                    <p class="top_txt">[New Design] 구엘_남2</p>
+                                                                    <p class="tit_txt">Guell_M</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="slide_cont n3 rel">
+                                                                <div class="img_wrap">
+                                                                </div>
+                                                                <div class="txt_wrap abs">
+                                                                    <p class="top_txt">[New Design] 구엘_남3</p>
+                                                                    <p class="tit_txt">Guell_M</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="slide_cont n4 rel">
+                                                                <div class="img_wrap">
+                                                                </div>
+                                                                <div class="txt_wrap abs">
+                                                                    <p class="top_txt">[New Design] 구엘_남4</p>
+                                                                    <p class="tit_txt">Guell_M</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="slide_cont n5 rel">
+                                                                <div class="img_wrap">
+                                                                </div>
+                                                                <div class="txt_wrap abs">
+                                                                    <p class="top_txt">[New Design] 구엘_남5</p>
+                                                                    <p class="tit_txt">Guell_M</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </section>  <!-- //sec02 -->
+                                            <section class="sec sec03 sec_discover">
+                                                <div class="art_wrap art01">
+                                                    <div class="bg" data-speed="0.1" data-lag="0"></div>
+                                                    <div class="txt_wrap wrap_1600">
+                                                        <h3 class="tit">Fine</h3>
+                                                        <div class="btm_txt_box flex">
+                                                            <p class="sub_txt">
+                                                                Craftsmanship<br>
+                                                                Marvelously<br>
+                                                                well-made item
+                                                            </p>
+                                                            <h3 class="tit">Jewelry</h3>
+                                                        </div>
+                                                        <div class="btn_wrap">
+                                                            <a href="">DISCOVER</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="art_wrap art02">
+                                                    <div class="bg" data-speed="0.1" data-lag="0"></div>
+                                                    <div class="txt_wrap wrap_1600">
+                                                        <h3 class="tit">Wedding</h3>
+                                                        <div class="btm_txt_box flex">
+                                                            <h3 class="tit">Jewelry</h3>
+                                                            <p class="sub_txt">
+                                                                Craftsmanship<br>
+                                                                Marvelously<br>
+                                                                well-made item
+                                                            </p>
+                                                        </div>
+                                                        <div class="btn_wrap">
+                                                            <a href="">DISCOVER</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>  <!-- //sec03 -->
+                                            <section class="sec sec04 sec_best flex">
+                                                <div class="cont_wrap left_wrap img_wrap rel">
+                                                    <div class="bg">
+                                                        <div class="cover"></div>
+                                                    </div>
+                                                    <h3 class="tit abs">Best Items</h3>
+                                                </div>
+                                                <div class="cont_wrap right_wrap list_wrap">
+                                                    <div class="slide_wrap">
+                                                        <div class="best_slider">
+                                                            <ul class="best_slide_list">
+                                                                <li class="best_slide_cont slide_cont01 rel">
+                                                                    <a href="">
+                                                                        <div class="bg"></div>
+                                                                        <h3 class="tit abs">originality</h3>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="best_slide_cont slide_cont02 rel">
+                                                                    <a href="">
+                                                                        <div class="bg"></div>
+                                                                        <h3 class="tit abs">romance</h3>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="best_slide_cont slide_cont03 rel">
+                                                                    <a href="">
+                                                                        <div class="bg"></div>
+                                                                        <h3 class="tit abs">style</h3>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="best_slide_cont slide_cont04 rel">
+                                                                    <a href="">
+                                                                        <div class="bg"></div>
+                                                                        <h3 class="tit abs">identity</h3>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="best_slide_cont slide_cont05 rel">
+                                                                    <a href="">
+                                                                        <div class="bg"></div>
+                                                                        <h3 class="tit abs">artworks</h3>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>  <!-- //sec04 -->
+                                            <section class="sec sec05 sec_scroll flex">
+                                                <div class="cont_wrap left_wrap 3d_wrap flex">
+                                                    <div class="inner_wrap">
+                                                        <div class="txt_wrap">
+                                                            <img src="/img/soozi/mainlogo_heritage.png" alt="orsia logo">
+                                                            <h3 class="tit">
+                                                                 Heritage
+                                                            </h3>
+                                                        </div>
+                                                        <div class="btn_3d flex">
+                                                            <a href="">
+                                                                <img src="/img/soozi/showroom.png" class="img_3d" alt="">
+                                                                <p class="sub_txt">3D<br>Showroom</p>
+                                                                <img src="/img/soozi/showroom_arr.png" class="arrow_img" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cont_wrap right_wrap scroll_wrap">
+                                                    <div class="list_scroll_wrap flex">
+                                                        <ul class="scroll_cont_wrap flex">
+                                                            <li class="scroll_cont cont01">
+                                                                <a href="">
+                                                                    <div class="txt_wrap">
+                                                                        <span class="num">01</span>
+                                                                        <p class="btm_txt">
+                                                                            <span class="en">Good Design</span>
+                                                                            독창성과 다양성의 조화
+                                                                        </p>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="scroll_cont cont02">
+                                                                <a href="">
+                                                                    <div class="txt_wrap">
+                                                                        <span class="num">02</span>
+                                                                        <p class="btm_txt">
+                                                                            <span class="en">Good Price</span>
+                                                                            다이아몬드 직수입
+                                                                        </p>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="scroll_cont cont03">
+                                                                <a href="">
+                                                                    <div class="txt_wrap">
+                                                                        <span class="num">03</span>
+                                                                        <p class="btm_txt">
+                                                                            <span class="en">Good Cresumer</span>
+                                                                            고객 참여형 제작과정
+                                                                        </p>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="scroll_cont cont04">
+                                                                <a href="">
+                                                                    <div class="txt_wrap">
+                                                                        <span class="num">04</span>
+                                                                        <p class="btm_txt">
+                                                                            <span class="en">Good Atelier</span>
+                                                                            장인정신과 자체공방
+                                                                        </p>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="scroll_cont cont05">
+                                                                <a href="">
+                                                                    <div class="txt_wrap">
+                                                                        <span class="num">05</span>
+                                                                        <p class="btm_txt">
+                                                                            <span class="en">Good Service</span>
+                                                                            판매 후 책임관리
+                                                                        </p>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </section>  <!-- //sec05 -->
+                                            <section class="sec sec06 sec_enlarge">
+                                                <div class="wrap_1600">
+                                                    <a href="" class="txtImg">
+                                                        <div class="bg"></div>
+                                                        <div class="txt_wrap left_txt"><img src="/img/soozi/mainlogo_heritage.png" alt="orsia logo"></div>
+                                                        <div class="txt_wrap right_txt">Atelier</div>
+                                                    </a>
+                                                    <p class="sub_txt">
+                                                        오르시아의 장인공방은 쇼룸내 OPEN 되어있어 투명하게 제작 과정을 보실 수 있습니다.<br>
+                                                        30년 이상 경력의 장인들이 오르시아만의 기술력과 디자인을 통해 정성스럽게 만듭니다.
+                                                    </p>
+                                                </div>
+                                            </section>  <!-- //sec06 -->
+                                        </div>
+
+                                        <footer>
+                                            <div class="wrap_1600">
+                                                <div class="cont_wrap top_wrap flex">
+                                                    <div class="txt_wrap left_cont">
+                                                        <h3 class="sub_txt">La Masion</h3>
+                                                        <img src="/img/soozi/logo_footer.png" alt="orsia logo">
+                                                    </div>
+                                                    <div class="txt_wrap right_cont flex">
+                                                        <ul class="foot_menu left_cont">
+                                                            <li class="menu_cont cont01">Wedding</li>
+                                                            <li class="menu_cont cont02">Fine Jewelry</li>
+                                                            <li class="menu_cont cont03">Jewelry</li>
+                                                        </ul>
+                                                        <ul class="foot_menu right_cont">
+                                                            <li class="menu_cont cont01">House</li>
+                                                            <li class="menu_cont cont02">Review</li>
+                                                            <li class="menu_cont cont03">Reservation</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="cont_wrap btm_wrap flex">
+                                                    <p class="address">
+                                                        서울시 강남구 영동대로 644 &nbsp;|&nbsp;
+                                                        <a href="tel:02-542-6344">02.542.6344</a>
+                                                    </p>
+                                                    <p class="policy">
+                                                        copyright © 2023 orsia. all rights reserved.
+                                                        <span class="round_txt">Privacy policy</span>
+                                                    </p>
+                                                    <ul class="sns_wrap flex">
+                                                        <li class="sns_cont cont01">
+                                                            <img src="/img/soozi/instagram.png" class="insta" alt="insta logo">
+                                                        </li>
+                                                        <li class="sns_cont cont01">
+                                                            <img src="/img/soozi/blog.png" class="blog" alt="blog logo">
+                                                        </li>
+                                                        <li class="sns_cont cont01">
+                                                            <img src="/img/soozi/youtube.png" class="youtube" alt="youtube logo">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+							</main>
+						</div>
+					</div>
+				</body>
+				</html>
